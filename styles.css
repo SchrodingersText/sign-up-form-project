@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url(fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url(fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.hero-img-container {
+    width: 100%;
+    background-color: rgb(150, 61, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(imgs/monica-dahiya-3N9Bx84lRPQ-unsplash.jpg);
+    background-size: 100%;
+    background-position-y: 11%;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    margin: 40px 0 auto 0;
+    background-color: #00000077;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container__img {
+    max-width: 30vw;
+    max-height: 30vw;
+}
+
+.logo-container__text {
+    color: #d4d4d4;
+    font-size: 6rem;
+}
+
+.main-text {
+    background-color: lightgoldenrodyellow;
+}
+
+.form  {
+    background-color: paleturquoise;
+}
+
+.btn-container {
+    background-color: lavender;
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-img-container {
+        max-width: 40%;
+        height: 100vh;
+
+        background-image: url(imgs/monica-dahiya-3N9Bx84lRPQ-unsplash.jpg);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .logo-container {
+        margin: 35vh 0 auto 0;
+        padding: 35px 0;
+    }
+
+    .logo-container__text {
+        font-size: 8rem;
+        margin-left: 20px;
+    }
+
+    .hero-img-container__img-credit {
+        color: #d4d4d4;
+        margin-bottom: 20px;
+    }
+
+    .hero-img-container__img-credit > a {
+        color: #d4d4d4;
+    }
+}    
