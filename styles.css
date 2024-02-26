@@ -101,8 +101,19 @@ form input:focus {
     box-shadow: 3px 3px 5px #3b3b3b48;
 }
 
-input:user-invalid {
+input:user-valid {
+    border-color: green;
+}
+
+input:user-invalid,
+form .error {
     border-color: red;
+}
+
+.matching-error {
+    font-weight: 900;
+    font-size: .8rem;
+    color: red;
 }
 
  /* styles the submit button section */
@@ -131,7 +142,7 @@ input:user-invalid {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 700px) {
     body {
         display: flex;
         flex-direction: row;
