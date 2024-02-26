@@ -73,7 +73,7 @@ body {
 
 /* styles the form section */
 .form  {
-   width: 100%;
+    width: 100%;
     padding: 20px 0 20px 30px;
     box-shadow: 0px 5px 10px #81818148;
 }
@@ -107,7 +107,28 @@ input:user-invalid {
 
  /* styles the submit button section */
 .btn-container {
-    background-color: lavender;
+    width: 100%;
+    padding: 10px 0 20px 30px;
+}
+
+.btn-container__button {
+    padding: 15px 50px;
+    margin: 30px 0;
+    background-color: #d34949;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.btn-container__log-in-text {
+    font-weight: 900;
+}
+
+.btn-container__log-in-link {
+    color: #d34949;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -186,6 +207,7 @@ input:user-invalid {
 
     /* styles the submit button section */
      .btn-container {
+        padding: 10px 0 20px 60px;
         flex-grow: 1.5;
      }
 }    
