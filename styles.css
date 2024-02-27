@@ -8,7 +8,7 @@ html {
     padding: 0;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Libre Franklin";
     src: url(fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf);
     font-weight: normal;
@@ -20,10 +20,22 @@ html {
     src: url(fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: italic;
+} */
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-style: italic;
 }
 
 body {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,15 +45,14 @@ body {
 /* styles the hero image section */
 .hero-img-container {
     width: 100%;
-    background-color: rgb(150, 61, 50);
+    background-color: #cab1aa;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 
-    background-image: url(imgs/monica-dahiya-3N9Bx84lRPQ-unsplash.jpg);
-    background-size: 100%;
-    background-position-y: 11%;
-    background-repeat: no-repeat;
+    background-image: url(imgs/close-up-wool-texture-design.jpg);
+    background-size: cover;
 }
 
 .logo-container {
@@ -57,13 +68,27 @@ body {
 .logo-container__img {
     max-width: 30vw;
     max-height: 30vw;
+    filter: invert() brightness(90%);
 }
 
 .logo-container__text {
-    color: #d4d4d4;
+    color: #e5e5e5;
     font-size: 6rem;
+    font-weight: 100;
 }
 
+.hero-img-container__img-credit {
+    color: #e5e5e5;
+    width: 100%;
+    text-align: right;
+    font-size: .5rem;
+    font-weight: 700;
+    
+}
+
+.hero-img-container__img-credit > a {
+    color: #e5e5e5;
+}
 
 /* styles the main text section */
 .main-text {
@@ -75,11 +100,11 @@ body {
 .form  {
     width: 100%;
     padding: 20px 0 20px 30px;
-    box-shadow: 0px 5px 10px #81818148;
+    box-shadow: 10px 5px 10px #81818148;
 }
 
 .form__label {
-    font-weight: 900;
+    font-weight: 700;
     color: #3b3b3b;
 }
 
@@ -111,7 +136,7 @@ form .error {
 }
 
 .matching-error {
-    font-weight: 900;
+    font-weight: 700;
     font-size: .8rem;
     color: red;
 }
@@ -125,7 +150,7 @@ form .error {
 .btn-container__button {
     padding: 15px 50px;
     margin: 30px 0;
-    background-color: #d34949;
+    background-color: #cab1aa;
     border: none;
     border-radius: 4px;
     font-size: 1.2rem;
@@ -134,11 +159,11 @@ form .error {
 }
 
 .btn-container__log-in-text {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .btn-container__log-in-link {
-    color: #d34949;
+    color: #cab1aa;
     text-decoration: none;
 }
 
@@ -146,24 +171,19 @@ form .error {
     body {
         display: flex;
         flex-direction: row;
+        align-items: stretch;
     }
 
     main {
-        min-height: 100vh;
         display: flex;
         flex-direction: column; 
         align-items: center;
+        box-shadow: 5px 0px 40px 50px white;
     }
 
     /* styles the hero image section */
     .hero-img-container {
-        max-width: 40%;
-        height: 100vh;
-
-        background-image: url(imgs/monica-dahiya-3N9Bx84lRPQ-unsplash.jpg);
-        background-size: cover;
-        background-position: right;
-        background-repeat: no-repeat;
+        min-height: 100vh;
     }
 
     .logo-container {
@@ -174,15 +194,12 @@ form .error {
     .logo-container__text {
         font-size: 8rem;
         margin-left: 20px;
+        margin-right: 40px;
     }
 
     .hero-img-container__img-credit {
-        color: #d4d4d4;
-        margin-bottom: 20px;
-    }
-
-    .hero-img-container__img-credit > a {
-        color: #d4d4d4;
+        text-align: center;
+        font-size: .8rem;
     }
 
     /* styles the main text section */
@@ -192,10 +209,12 @@ form .error {
         padding: 80px 60px;
         display: flex;
         align-items: end;
+        box-shadow: 5px -40px 40px 30px #f3f3f3;
     }
 
     .main-text__text {
         font-size: 2rem;
+        font-weight: 300;
     } 
 
     /* styles the form section */
@@ -221,4 +240,4 @@ form .error {
         padding: 10px 0 20px 60px;
         flex-grow: 1.5;
      }
-}    
+}
