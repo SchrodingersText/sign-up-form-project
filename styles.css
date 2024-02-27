@@ -96,6 +96,10 @@ body {
     padding: 20px 30px;
 }
 
+.main-text__text {
+    font-weight: 300;
+}
+
 /* styles the form section */
 .form  {
     width: 100%;
@@ -214,7 +218,6 @@ form .error {
 
     .main-text__text {
         font-size: 2rem;
-        font-weight: 300;
     } 
 
     /* styles the form section */
