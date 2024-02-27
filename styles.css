@@ -243,4 +243,9 @@ form .error {
         padding: 10px 0 20px 60px;
         flex-grow: 1.5;
      }
+
+     .btn-container__button:hover {
+        box-shadow: 0px 0px 10px #3b3b3b48;
+        cursor: pointer;
+     }
 }
